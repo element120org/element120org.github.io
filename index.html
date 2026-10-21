@@ -1,45 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#071b30">
-  <meta name="description" content="Element 120 — an emerging platform connecting science, medicine, technology and people to turn ideas into impact.">
-  <title>Element 120 — Where Science Becomes Impact</title>
-  <style>
-    :root{--navy:#071b30;--deep:#061321;--teal:#25a8b5;--gold:#e9bd79;--white:#f6f9fb;--muted:#b3c7d3}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--navy);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}
-    .shell{max-width:1120px;margin:auto;padding:0 24px}.topbar{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:25px 0}.brand{font-size:16px;letter-spacing:.22em;font-weight:700}.brand span{color:var(--teal)}nav{display:flex;gap:23px;flex-wrap:wrap;font-size:13px;color:var(--muted)}nav a:hover{color:var(--gold)}
-    .hero{min-height:76vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 0 85px;position:relative}.hero:before{content:"";position:absolute;z-index:-1;width:min(85vw,620px);height:min(85vw,620px);border-radius:50%;background:radial-gradient(circle,rgba(35,157,174,.15),transparent 70%)}
-    .symbol{width:min(82vw,490px);height:auto;display:block;margin:0 auto 25px}.hero h1{font-size:clamp(30px,6vw,58px);letter-spacing:.23em;font-weight:300;margin:0 0 9px;padding-left:.23em}.hero h1 span{color:var(--teal)}.tagline{font-size:clamp(11px,1.8vw,16px);letter-spacing:.27em;font-weight:500;margin:0;color:#d9e7ed}.intro{max-width:660px;color:var(--muted);font-size:18px;margin:33px auto 0}
-    .section{padding:85px 0;border-top:1px solid rgba(195,228,235,.15)}.eyebrow{font-size:12px;letter-spacing:.25em;color:var(--teal);font-weight:700;text-transform:uppercase}.section h2{font-size:clamp(30px,4.5vw,48px);line-height:1.2;font-weight:400;margin:15px 0 24px}.section p{max-width:750px;color:var(--muted);font-size:17px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}.card{border:1px solid rgba(115,197,206,.24);background:rgba(255,255,255,.035);padding:30px;border-radius:15px}.card .num{font-size:13px;color:var(--gold)}.card h3{font-size:21px;font-weight:500;margin:14px 0}.card p{font-size:15px;margin:0}.statement{font-size:clamp(24px,4vw,39px)!important;line-height:1.4;color:var(--white)!important;max-width:900px!important}.statement em{font-style:normal;color:var(--gold)}
-    .contact{background:linear-gradient(130deg,rgba(34,161,176,.12),rgba(233,189,121,.07));border-radius:20px;padding:45px;margin-bottom:70px}.contact p{margin-bottom:30px}.cta{display:inline-block;border:1px solid var(--teal);border-radius:50px;padding:13px 26px;color:var(--white);font-size:14px;letter-spacing:.07em}.cta:hover{background:rgba(37,168,181,.15)}footer{border-top:1px solid rgba(195,228,235,.15);padding:28px 0 42px;color:#91aab9;font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-    @media(max-width:650px){.topbar{align-items:flex-start;flex-direction:column}nav{gap:15px}.hero{min-height:68vh;padding:45px 0 70px}.cards{grid-template-columns:1fr}.section{padding:65px 0}.contact{padding:28px}.intro{font-size:16px}.hero h1{letter-spacing:.14em;padding-left:.14em}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ELEMENT 120 | Where Science Becomes Impact</title>
+<meta name="description" content="ELEMENT 120 — Where Science Becomes Impact">
+<style>
+:root{--navy:#071b30;--cyan:#55d6dc;--white:#edf5f8;--muted:#a8bdca}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--navy);color:var(--white);font-family:Helvetica Neue,Arial,sans-serif}
+nav{position:absolute;top:35px;left:0;width:100%;display:flex;justify-content:flex-end;gap:35px;padding:0 7%;z-index:10}
+nav a{color:var(--white);text-decoration:none;font-size:14px;font-weight:300}nav a:hover{color:var(--cyan)}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:100px 20px 60px;background:var(--navy)}
+.hero-logo{display:block;width:100%;max-width:650px;height:auto;object-fit:contain}
+section{padding:110px 10%;max-width:1100px;margin:0 auto}section h2{font-size:28px;font-weight:300;letter-spacing:4px;color:var(--cyan);margin-bottom:30px}section p{font-size:17px;font-weight:300;line-height:1.9;color:var(--muted);max-width:750px}
+.divider{width:80%;height:1px;margin:0 auto;background:linear-gradient(90deg,transparent,#246078,transparent)}
+footer{padding:45px 20px;text-align:center;font-size:12px;letter-spacing:2px;color:#7795a8}
+@media(max-width:600px){nav{top:25px;justify-content:center;gap:18px;padding:0 10px}nav a{font-size:12px}.hero{min-height:85vh;padding:90px 12px 40px}.hero-logo{max-width:450px}section{padding:75px 8%}section h2{font-size:23px}section p{font-size:16px}}
+</style>
 </head>
 <body>
-<div class="shell">
-  <header class="topbar"><a class="brand" href="#home">ELEMENT <span>120</span></a><nav aria-label="Main navigation"><a href="#about">About</a><a href="#mission">Mission</a><a href="#work">What We Do</a><a href="#contact">Contact</a></nav></header>
-  <main>
-    <section class="hero" id="home">
-      <svg class="symbol" viewBox="0 0 520 280" role="img" aria-label="Element 120 abstract atomic mark in teal, navy and gold">
-        <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0c385b"/><stop offset=".48" stop-color="#27b9c4"/><stop offset="1" stop-color="#f2c98d"/></linearGradient><linearGradient id="g2" x1="0" x2="1"><stop stop-color="#0b2a4b"/><stop offset="1" stop-color="#37bac5"/></linearGradient></defs>
-        <g stroke-linecap="round" stroke-width="12"><path d="M30 105 H110" stroke="url(#g2)"/><path d="M30 140 H110" stroke="#26a9b7"/><path d="M30 175 H110" stroke="#e9bd79"/></g>
-        <text x="129" y="197" fill="#e8f4f8" font-size="135" font-family="Arial,Helvetica,sans-serif" font-weight="200" letter-spacing="-8">12</text>
-        <circle cx="388" cy="145" r="79" fill="none" stroke="url(#g)" stroke-width="9"/>
-        <path d="M290 92 A119 119 0 0 1 380 22" fill="none" stroke="url(#g)" stroke-width="6"/><path d="M419 24 A119 119 0 0 1 492 139" fill="none" stroke="url(#g)" stroke-width="6"/><path d="M487 174 A119 119 0 0 1 401 259" fill="none" stroke="url(#g)" stroke-width="6"/>
-        <circle cx="393" cy="22" r="20" fill="#26aeb9"/><circle cx="491" cy="156" r="20" fill="#e9bd79"/><circle cx="382" cy="260" r="20" fill="#176c9a"/>
-      </svg>
-      <h1>ELEMENT <span>120</span></h1>
-      <p class="tagline">WHERE SCIENCE BECOMES IMPACT</p>
-      <p class="intro">Connecting people, knowledge and opportunity to move science forward.</p>
-    </section>
-    <section class="section" id="about"><div class="eyebrow">About us</div><h2>A new element of connection.</h2><p>Element 120 is an emerging interdisciplinary platform at the intersection of science, medicine, technology and innovation. We believe meaningful progress begins when different perspectives come together.</p></section>
-    <section class="section" id="mission"><div class="eyebrow">Our mission</div><h2>From ideas to real-world impact.</h2><p class="statement">We bring together <em>people, expertise and resources</em> to make scientific knowledge more connected, accessible and actionable.</p></section>
-    <section class="section" id="work"><div class="eyebrow">What we do</div><h2>Creating space for progress.</h2><div class="cards"><article class="card"><div class="num">01 / CONNECT</div><h3>Community & Dialogue</h3><p>Bringing researchers, clinicians, innovators and partners into meaningful conversations.</p></article><article class="card"><div class="num">02 / EXPLORE</div><h3>Science & Innovation</h3><p>Exploring emerging ideas and the responsible application of technology in healthcare and research.</p></article><article class="card"><div class="num">03 / ENABLE</div><h3>Collaboration & Impact</h3><p>Creating opportunities for partnerships, events and initiatives that help ideas move forward.</p></article></div></section>
-    <section class="contact" id="contact"><div class="eyebrow">Get in touch</div><h2>Let's create what comes next.</h2><p>Interested in collaborating with Element 120? We would love to start a conversation.</p><a class="cta" href="mailto:hello@element120.org">CONTACT US ↗</a></section>
-  </main>
-  <footer><span>© 2026 Element 120. All rights reserved.</span><span>Where Science Becomes Impact.</span></footer>
-</div>
+<nav><a href="#about">About</a><a href="#mission">Mission</a><a href="#whatwedo">What We Do</a><a href="#contact">Contact</a></nav>
+<main>
+<div class="hero"><img class="hero-logo" src="./logo.jpg" alt="ELEMENT 120 — Where Science Becomes Impact"></div>
+<section id="about"><h2>ABOUT</h2><p>ELEMENT 120 is an emerging scientific platform bringing together people, knowledge and opportunities.</p></section>
+<div class="divider"></div>
+<section id="mission"><h2>OUR MISSION</h2><p>We believe that meaningful scientific progress happens when different minds, disciplines and perspectives connect.</p><p>Our mission is to bridge science, medicine, innovation and society.</p></section>
+<div class="divider"></div>
+<section id="whatwedo"><h2>WHAT WE DO</h2><p>We create opportunities for dialogue, collaboration and knowledge exchange between researchers, healthcare professionals, innovators and organizations.</p><p>Through scientific events, interdisciplinary initiatives and strategic partnerships, we aim to transform ideas into meaningful progress.</p></section>
+<div class="divider"></div>
+<section id="contact"><h2>CONTACT</h2><p>Interested in collaborating with ELEMENT 120? We welcome new ideas, partnerships and scientific initiatives.</p></section>
+</main><footer>© 2026 ELEMENT 120</footer>
 </body>
 </html>
